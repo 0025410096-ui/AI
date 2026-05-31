@@ -1,5 +1,21 @@
-<a-scene
-embedded
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mô Hình 3D AR</title>
+
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js@3.4.5/aframe/build/aframe-ar.js"></script>
+</head>
+
+<body style="margin:0; overflow:hidden;">
+
+    <a-scene
+        embedded
+        vr-mode-ui="enabled: false"
         arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
 
         <a-marker preset="hiro">
@@ -19,4 +35,5 @@ embedded
     </a-scene>
 
 </body>
+
 </html>
